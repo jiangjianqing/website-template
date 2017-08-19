@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <title>Bootstrap Admin</title>
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <script type="text/javascript" src="../static/vendor/director.js"></script>
+
+    <!-- 引入font awesome -->
+    <link rel="stylesheet" href="../static/vendor/font-awesome4/css/font-awesome.min.css">
+
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="../static/vendor/bootstrap3/css/bootstrap.css">
+
+    <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="../static/vendor/bootstrap3/css/bootstrap-theme.css">
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../static/vendor/jquery.min.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="../static/vendor/bootstrap3/js/bootstrap.js"></script>
+
+    <!-- import jsTree -->
+    <link rel="stylesheet" href="../static/vendor/jstree/themes/default/style.css" />
+    <script src="../static/vendor/jstree/jstree.js" ></script>
+
+    <!-- import chosen -->
+    <link href="../static/vendor/chosen/chosen.min.css" rel="stylesheet">
+    <script src="../static/vendor/chosen/chosen.jquery.min.js"></script>
+
+    <!-- import select2 -->
+    <link href="../static/vendor/bootstrap-select2/css/select2.min.css" rel="stylesheet" />
+    <script src="../static/vendor/bootstrap-select2/js/select2.min.js"></script>
+
+    <!-- import switch -->
+    <link href="../static/vendor/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet">
+    <script src="../static/vendor/bootstrap-switch/js/bootstrap-switch.min.js"></script>
+
+    <!-- import slider -->
+    <link href="../static/vendor/bootstrap-slider/css/bootstrap-slider.min.css" rel="stylesheet">
+    <script src="../static/vendor/bootstrap-slider/bootstrap-slider.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="styles/theme.css">
+
+</head>
+<body class=" theme-blue">
+
+    <!-- Demo page code -->
+
+    <script type="text/javascript">
+        $(function() {
+            var match = document.cookie.match(new RegExp('color=([^;]+)'));
+            if(match) var color = match[1];
+            if(color) {
+                $('body').removeClass(function (index, css) {
+                    return (css.match (/\btheme-\S+/g) || []).join(' ')
+                })
+                $('body').addClass('theme-' + color);
+            }
+
+            $('[data-popover="true"]').popover({html: true});
+            
+        });
+    </script>
+    <style type="text/css">
+        .navbar-default .navbar-brand, .navbar-default .navbar-brand:hover {
+            color: #fff;
+        }
+    </style>
+
+
+    <div class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+          <a class="" href="index.html"><span class="navbar-brand"><span class="fa fa-paper-plane"></span>NumberOne专业开发</span></a></div>
+
+        <div class="navbar-collapse collapse" style="height: 1px;">
+
+        </div>
+      </div>
+    </div>
+    
+
+
+    <div class="dialog">
+        <div class="panel panel-default">
+            <p class="panel-heading no-collapse">Sign In</p>
+            <div class="panel-body">
+                <form>
+                    <div class="form-group">
+                        <label>Username</label>
+                        <input type="text" class="form-control span12">
+                    </div>
+                    <div class="form-group">
+                    <label>Password</label>
+                        <input type="password" class="form-controlspan12 form-control">
+                    </div>
+                    <a href="index.html" class="btn btn-primary pull-right">Sign In</a>
+                    <label class="remember-me"><input type="checkbox"> Remember me</label>
+                    <div class="clearfix"></div>
+                </form>
+            </div>
+        </div>
+        <p class="pull-right" style=""><a href="http://www.portnine.com" target="blank" style="font-size: .75em; margin-top: .25em;">Design by Portnine</a></p>
+        <p><a href="reset-password.html">Forgot your password?</a></p>
+    </div>
+
+
+    <script type="text/javascript">
+        $("[rel=tooltip]").tooltip();
+        $(function() {
+            $('.demo-cancel-click').click(function(){return false;});
+        });
+    </script>
+    
+  
+</body></html>
