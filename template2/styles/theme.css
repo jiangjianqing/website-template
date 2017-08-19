@@ -133,10 +133,18 @@ label {
   background: none;
   color: #000;
 }
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .active > a,
 .navbar .nav li.dropdown.open > .dropdown-toggle {
+  background-image: none;/*2017.08.18 compatible for bootstrap3*/
   background-color: #444;
   color: #fff;
 }
+
+.navbar .nav li.dropdown >  .dropdown-menu > li:hover {
+  background-color: #909096;/*#8989a6;*//*2017.08.18 add mouse hover effect*/
+}
+
 .navbafr {
   position: relative;
   z-index: 20;
